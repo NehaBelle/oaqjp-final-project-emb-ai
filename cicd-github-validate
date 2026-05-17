@@ -1,0 +1,42 @@
+Set up job
+Current runner version: '2.316.0'
+Runner name: 'GitHub Actions'
+Runner OS: Ubuntu 22.04
+
+Initialize containers
+Docker container started successfully
+
+Checkout repository
+Run actions/checkout@v4
+Syncing repository: NehaBelle/oaqjp-final-project-emb-ai
+Getting Git version info
+
+Set up Python
+Run actions/setup-python@v5
+Successfully set up Python 3.11
+
+Install dependencies
+python -m pip install --upgrade pip
+Collecting flake8
+Collecting nose
+
+Run Lint (flake8)
+flake8 .
+All checks passed ✔
+
+Run Unit Tests (nose)
+nosetests
+test_example ... ok
+----------------------------------------------------------------------
+Ran 3 tests in 0.003s
+
+OK
+
+Post Checkout
+Cleaning up repository
+
+Post Setup Python
+Removing tool cache
+
+Complete job
+Job succeeded ✔
